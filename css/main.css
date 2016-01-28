@@ -1,0 +1,26 @@
+body {padding-top: 69px;font-family: 'Open Sans', sans-serif; color: #333; background: #fafafa;}
+.navbar-default, .navbar-default .navbar-collapse {border-color: #333;}
+.navbar-default .navbar-brand {font-size: 38px;position: relative; color: #fff; background: #333;text-transform: uppercase; padding: 15px 0 15px 15px; font-weight: 800;letter-spacing: -0.8px;}
+.navbar-default .navbar-brand span { margin-left: 5px;}
+
+.navbar-default .navbar-brand:hover {background: #333; color: #f1f1f1;}
+.navbar-brand {height: auto; line-height:38px;}
+.navbar-brand:before {position: absolute;background-color: #333;left: -3000px;bottom: 0;top: 0;content: '';width: 3000px;}
+.navbar-brand:after {position: absolute;content: '';width: 0;height: 0;border-style: solid;border-width: 68px 0 0 68px;border-color: transparent transparent transparent #333;right: -68px;top: 0;z-index: 1000;}
+.navbar-toggle {margin-top: 17px;}
+
+.first-section h2, .second-section h3{padding: 15px 0; font-weight: 700; font-size: 38px;}
+
+.first-section p, .second-section p {padding: 15px 0; font-weight: 400; font-size: 16px;}
+
+ .second-section h3 {font-size: 28px; font-weight: 600;}
+
+.title-specs {border: 1px solid #333; padding: 40px 25px; border-radius: 100px;display: inline-block; font-size: 18px; margin: 15px 0px; width: 176px; height: 176px;background: #f5f5f5;}
+.title-specs span {display: block;margin-bottom: 15px;font-size: 38px;}
+.title-specs a {color: #333; text-decoration: none; font-weight: 600; text-transform: uppercase;}
+
+.logo-second, .title-specs a:hover {color: #919191;}
+@media (min-width: 768px){
+.navbar-nav>li>a {
+padding-top: 24px;padding-bottom: 24px;}
+}
