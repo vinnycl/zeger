@@ -37,6 +37,7 @@
 					<ul class="nav navbar-nav navbar-right">
 					<li class="active"><a href="#">Home</a></li>
 					<li><a href="#about">About</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
 					<li><a href="#services">Services</a></li>
 					<li><a href="#contact">Contact</a></li>
 					</ul>
@@ -145,9 +146,145 @@
 			<div class="container">
 
 				<div class="row">
-					
-					<div class="col-sm-12 third-section">
-						<p>portfolio</p>
+					<div class="col-sm-12">
+
+						<h3 class="text-center">Portfolio</h3>
+
+						<div id="filters" class="button-group">
+							<button class="btn btn-default" data-filter="*">show all</button>
+							<button class="btn btn-default" data-filter=".clients">Clients</button>
+							<button class="btn btn-default" data-filter=".production">Production</button>
+							<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalFrame" data-title="The 100" data-url="https://www.youtube.com/embed/WjQq1hnccjU">Open modal</button>
+							<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalVideo" data-title="The 200" data-url="http://zegerstudio.com/video/1.mp4">Open modal v</button>
+						</div>
+
+					</div>
+
+				</div>									
+
+				<div class="isotopeHolder">
+				
+					<div class="item clients col-sm-3">
+						<div class="thumbnail">
+							<img src="img/clientes/CBS_logo.png" alt="cbs">
+						</div>
+					</div>
+
+					<div class="item clients col-sm-3">
+						<div class="thumbnail">
+							<img src="img/clientes/Discovery_Channel_2009.png" alt="cbs">
+						</div>
+					</div>
+
+					<div class="item clients col-sm-3">
+						<div class="thumbnail">
+							<img src="img/clientes/history.jpg" alt="cbs">
+						</div>
+					</div>
+
+					<div class="item clients col-sm-3">
+						<div class="thumbnail">
+							<img src="img/clientes/fox-tv-logo.png" alt="cbs">
+						</div>
+					</div>				
+				
+
+					<div class="item clients col-sm-3">
+						<div class="thumbnail">
+							<img src="img/clientes/logo-canal-futura-1.jpg" alt="cbs">
+						</div>
+					</div>
+
+					<div class="item clients col-sm-3">
+						<div class="thumbnail">
+							<img src="img/clientes/MTV_logo.png" alt="cbs">
+						</div>
+					</div>
+
+					<div class="item clients col-sm-3">
+						<div class="thumbnail">
+							<img src="img/clientes/Syfylogo.png" alt="cbs">
+						</div>
+					</div>
+
+					<div class="item clients col-sm-3">
+						<div class="thumbnail">
+							<img src="img/clientes/VIZ-Media-logo-post.jpg" alt="cbs">
+						</div>
+					</div>
+				
+					<div class="item clients col-sm-3">
+						<div class="thumbnail">
+							<img src="img/clientes/LOGO_TVPinguim.jpg" alt="cbs">
+						</div>
+					</div>
+					<div class="item clients col-sm-3">
+						<div class="thumbnail">
+							<img src="img/clientes/Warner_Bros._Pictures_logo.png" alt="cbs">
+						</div>
+					</div>
+
+				
+					<div class="item production col-sm-3">
+						<div class="thumbnail">
+							<img src="img/producoes/beyblade-shogun-steel.jpg" alt="cbs">
+						</div>
+					</div>
+
+					<div class="item production col-sm-3">
+						<div class="thumbnail">
+							<img src="img/producoes/digging.jpg" alt="cbs">
+						</div>
+					</div>
+
+					<div class="item production col-sm-3">
+						<div class="thumbnail">
+							<img src="img/producoes/Hawai-five0.jpg" alt="cbs">
+						</div>
+					</div>
+
+					<div class="item production col-sm-3">
+						<div class="thumbnail">
+							<img src="img/producoes/Ice-Pilot.jpg" alt="cbs">
+						</div>
+					</div>
+
+				
+					<div class="item production col-sm-3">
+						<div class="thumbnail">
+							<img src="img/producoes/JSLogo.jpg" alt="cbs">
+						</div>
+					</div>
+
+					<div class="item production col-sm-3">
+						<div class="thumbnail">
+							<img src="img/producoes/santas-logo.jpg" alt="cbs">
+						</div>
+					</div>
+
+					<div class="item production col-sm-3">
+						<div class="thumbnail">
+							<img src="img/producoes/Scandelicius-logo.jpg" alt="cbs">
+						</div>
+					</div>
+
+					<div class="item production col-sm-3">
+						<div class="thumbnail">
+							<img src="img/producoes/Stormageddon-231x300.jpg" alt="cbs">
+						</div>
+					</div>
+
+				
+					<div class="item production col-sm-3">
+						<div class="thumbnail">
+							<img src="img/producoes/Surviving-Jack-poster-season-1-2014.jpg" alt="cbs">
+						</div>
+					</div>
+
+					<div class="item production col-sm-3">
+						<div class="thumbnail">
+							<img src="img/producoes/The-100-poster.png" alt="cbs">
+						</div>
 					</div>
 				</div>
 			</div>
@@ -203,11 +340,9 @@
 					
 					<div class="col-sm-6">
 						<p>© Zeger Studio - All rights reserved - Prohibited the total or partial reproduction without permission.</p>
-						<p>
-						</p>
 					</div>
 
-					<div class="col-sm-6">
+					<div class="col-sm-6 social">
 						<p>
 							<ul >
 								<li><a href="https://www.facebook.com/pages/ZegerStudio/256541017694194" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
@@ -228,11 +363,39 @@
 				<a href="#top"></a>
 			</div>
 		</footer>
+		<div class="modal fade" id="modalFrame" tabindex="-1" role="dialog" aria-labelledby="modalFrameLabel">
+			<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="modalFrameLabel">New message</h4>
+				</div>
+				<div class="modal-body">
+					<div class="videoWrapper"><iframe width="100%" height="100%" src="" frameborder="0" allowfullscreen></iframe></div>
+				</div>
+			</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="modalVideo" tabindex="-1" role="dialog" aria-labelledby="modalVideoLabel">
+			<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="modalVideoLabel">New message</h4>
+				</div>
+				<div class="modal-body">
+					<div class="videoWrapper"><video width="320" height="240" controls><source src="movie.mp4" type="video/mp4"></video></div>
+				</div>
+			</div>
+			</div>
+		</div>
 
 		<!-- Bootstrap core JavaScript
 		================================================== -->
 		<script src="js/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
 		<script type="text/javascript">
 		$(window).scroll(function () {
 			if ($(this).scrollTop() > 69) {
@@ -261,6 +424,47 @@
 			}
 			});
 		});
+
+		$('#modalFrame').on('show.bs.modal', function (event) {
+			var button = $(event.relatedTarget)
+			var recipient = button.data('url') 
+			var recipientT = button.data('title') 
+			var modal = $(this)
+			modal.find('.modal-title').text(recipientT)
+			modal.find('.modal-body iframe').attr('src', recipient);
+		})
+
+		$('#modalVideo').on('show.bs.modal', function (event) {
+			var button = $(event.relatedTarget)
+			var recipient = button.data('url') 
+			var recipientT = button.data('title') 
+			var modal = $(this)
+			modal.find('.modal-title').text(recipientT)
+			modal.find('.modal-body video').attr('src', recipient);
+		})
+
+		$( document ).ready(function() {
+		  var $container = $('.isotopeHolder').isotope({
+			itemSelector : '.item',
+			isFitWidth: true
+		  });
+
+		  $(window).smartresize(function(){
+			$container.isotope({
+			  columnWidth: '.col-sm-3'
+			});
+		  });
+
+		  $container.isotope({ filter: '*' });
+
+			// filter items on button click
+		  $('#filters').on( 'click', 'button', function() {
+			var filterValue = $(this).attr('data-filter');
+			$container.isotope({ filter: filterValue });
+		  });
+		  
+		});
+
 		</script>
 	</body>
 </html>

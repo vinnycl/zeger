@@ -7,12 +7,12 @@ body {padding-top: 0px;font-family: 'Open Sans', sans-serif; color: #333; backgr
 .navbar-default .navbar-brand:hover {background: #333; color: #f1f1f1;}
 .navbar-brand {height: auto; line-height:38px;}
 .navbar-brand:before {position: absolute;background-color: #333;left: -3000px;bottom: 0;top: 0;content: '';width: 3000px;}
-.navbar-brand:after {position: absolute;content: '';width: 0;height: 0;border-style: solid;border-width: 68px 0 0 68px;border-color: transparent transparent transparent #333;right: -68px;top: 0;z-index: 1000;}
+.navbar-brand:after {position: absolute;content: '';width: 0;height: 0;border-style: solid;border-width: 68px 0 0 68px;border-color: transparent transparent transparent #333;right: -67px;top: 0px;z-index: 1000;}
 .navbar-toggle {margin-top: 17px;}
 
-.first-section h2, .second-section h3, .third-section h3, .fourth-section h4, .fourth-section h3{padding: 15px 0; font-weight: 700; font-size: 38px; text-transform: uppercase;}
- .second-section h3, .third-section h3, .fourth-section h3 {font-size: 28px; font-weight: 600;}
- .fourth-section h4 {font-size: 24px; font-weight: 400;}
+.first-section h2, .second-section h3, .third-section h3, .fourth-section h4, .fourth-section h3{padding: 15px 0; margin: 0; font-weight: 700; font-size: 38px; text-transform: uppercase;}
+.second-section h3, .third-section h3, .fourth-section h3 {font-size: 28px; font-weight: 600;}
+.fourth-section h4 {font-size: 24px; font-weight: 400;}
 .first-section p, .second-section p {padding: 15px 0; font-weight: 400; font-size: 16px;}
 .title-specs {border: 1px solid #333; padding: 40px 25px; border-radius: 100px;display: inline-block; font-size: 18px; margin: 15px 0px; width: 176px; height: 176px;background: #f5f5f5;}
 .title-specs i {display: block;margin-bottom: 15px;font-size: 38px;}
@@ -33,7 +33,23 @@ body.scroll {padding-top: 69px;}
 #back-top a:before{content:'\f077';font:25px/50px FontAwesome}
 #back-top.show-totop{visibility:visible;bottom:0}
 #back-top.mobile-back-top{-webkit-transform:scale(.7);-ms-transform:scale(.7);-o-transform:scale(.7);transform:scale(.7);margin:0 2px 1px 0}
+
+#about, #portfolio, #services {padding-top: 69px;padding-bottom: 69px;}
+
+.portfolio #filters {padding: 15px 0;}
+.portfolio h3 {font-size: 28px;font-weight: 600; text-transform: uppercase;}
+
+.isotope, .isotope .item {-webkit-transition-duration: 0.8s;-moz-transition-duration: 0.8s;-ms-transition-duration: 0.8s;-o-transition-duration: 0.8s;transition-duration: 0.8s;}
+.isotope {-webkit-transition-property: height, width;-moz-transition-property: height, width;-ms-transition-property: height, width;-o-transition-property: height, width;transition-property: height, width;}
+.isotope .item {-webkit-transition-property: -webkit-transform, opacity;-moz-transition-property:-moz-transform, opacity;-ms-transition-property:-ms-transform, opacity;-o-transition-property:top, left, opacity;transition-property:transform, opacity;}
+.isotopeHolder  {left: -15px;}
+
+.videoWrapper {position: relative;padding-bottom: 56.25%;padding-top: 25px;height: 0;}
+.videoWrapper iframe, .videoWrapper video {position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
 @media (min-width: 768px){
-.navbar-nav>li>a {
-padding-top: 24px;padding-bottom: 24px;}
+.navbar-nav>li>a {padding-top: 24px;padding-bottom: 24px;}
+}
+@media (max-width: 400px){
+.navbar-default .navbar-brand {font-size: 30px;}
+.navbar-default .navbar-toggle {z-index: 1993;background: #fff;}
 }
