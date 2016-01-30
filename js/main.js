@@ -56,20 +56,22 @@ $('#modalVideo').on('show.bs.modal', function (event) {
 })
 
 $( document ).ready(function() {
-	var $container = $('.isotopeHolder').isotope({
-		itemSelector : '.item',
-		isFitWidth: true
-	});
-
-	$(window).smartresize(function(){
-		$container.isotope({
-			columnWidth: '.col-sm-3'
+	setTimeout(function(){
+		var $container = $('.isotopeHolder').isotope({
+			itemSelector : '.item',
+			isFitWidth: true
 		});
-	});
 
-	$container.isotope({ filter: '*' });
-	$('#filters').on( 'click', 'button', function() {
-		var filterValue = $(this).attr('data-filter');
-		$container.isotope({ filter: filterValue });
-	});
+		$(window).smartresize(function(){
+			$container.isotope({
+				columnWidth: '.col-sm-3'
+			});
+		});
+
+		$container.isotope({ filter: '*' });
+		$('#filters').on( 'click', 'button', function() {
+			var filterValue = $(this).attr('data-filter');
+			$container.isotope({ filter: filterValue });
+		});
+	},1000);
 });
