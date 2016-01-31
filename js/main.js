@@ -44,7 +44,7 @@ $('#modalFrame').on('show.bs.modal', function (event) {
 	var modal = $(this)
 	modal.find('.modal-title').text(recipientT)
 	modal.find('.modal-body iframe').attr('src', recipient);
-})
+});
 
 $('#modalVideo').on('show.bs.modal', function (event) {
 	var button = $(event.relatedTarget)
@@ -53,7 +53,7 @@ $('#modalVideo').on('show.bs.modal', function (event) {
 	var modal = $(this)
 	modal.find('.modal-title').text(recipientT)
 	modal.find('.modal-body video').attr('src', recipient);
-})
+});
 
 $( document ).ready(function() {
 	setTimeout(function(){
@@ -73,5 +73,5 @@ $( document ).ready(function() {
 			var filterValue = $(this).attr('data-filter');
 			$container.isotope({ filter: filterValue });
 		});
-	},1000);
+	},2000);
 });
